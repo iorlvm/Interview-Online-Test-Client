@@ -22,6 +22,7 @@ export const useCartStore = defineStore('cart', () => {
                 ...product,
                 quantity: count
             };
+            ElMessage.success(`${cart.value[productId].name} x ${count} 加入購物車`);
         }
     };
 
